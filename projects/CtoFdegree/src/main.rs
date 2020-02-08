@@ -10,7 +10,7 @@ fn main() {
 
     let input_temp: u32 = match input_temp.trim().parse() {
         Ok(num) => num,
-        Err(_) => 0,
+        Err(_) => 0, //default to zero if error
     };
 
     println!("Would you like to convert to (C) or (F)?");

@@ -9,7 +9,7 @@ fn main() {
         .read_line(&mut input_temp)
         .expect("Failed to read line.");
 
-    let input_temp: u32 = match input_temp.trim().parse() {
+    let input_temp: i32 = match input_temp.trim().parse() {
         Ok(num) => num,
         Err(_) => 0, //default to zero if error
     };

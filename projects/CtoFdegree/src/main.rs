@@ -22,11 +22,11 @@ fn main() {
         .read_line(&mut temp_type)
         .expect("Failed to read line.");
 
-    let mut temp_type = temp_type.trim();
+    let temp_type = temp_type.trim();
 
     match temp_type {
         "C" => {
-            let c_input_temp = (((input_temp - 32) * 5) / 9);
+            let c_input_temp = (input_temp - 32) * 5 / 9;
             println!("{} Celcius", c_input_temp);
         }
         "F" => {
